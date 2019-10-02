@@ -45,8 +45,4 @@ public class FractionTest {
         assertEquals(0.75, fraction.suma(new Fraction(1, 4)), 10e-5);
     }
 
-    @Test
-    void testResta() {
-        assertEquals(0.25, fraction.resta(new Fraction(1, 4)), 10e-5);
-    }
 }
