@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PointTest {
     private Point point;
@@ -50,4 +52,11 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testIsEquals() {
+        assertTrue(point.isEquals(new Point(2, 3)));
+        assertFalse(point.isEquals(new Point(5,3)));
+        assertFalse(point.isEquals(new Point(5,8)));
+        assertFalse(point.isEquals(new Point(2,8)));
+    }
 }

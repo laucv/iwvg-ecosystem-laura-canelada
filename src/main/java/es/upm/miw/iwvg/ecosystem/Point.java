@@ -47,4 +47,9 @@ public class Point {
                 ", y=" + y +
                 '}';
     }
+
+    public boolean isEquals(Point point) {
+        return this.x == point.getX() && this.y == point.getY();
+    }
+
 }
