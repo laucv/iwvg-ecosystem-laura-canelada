@@ -47,4 +47,14 @@ public class Point {
                 ", y=" + y +
                 '}';
     }
+
+    public boolean isEquals(Point point) {
+        return this.x == point.getX() && this.y == point.getY();
+    }
+
+    public double distance(Point point){
+        return Math.sqrt( (double) ((this.x - point.getX())*(this.x - point.getX())) + (double) ((this.y - point.getY()) * (this.y - point.getY())) );
+    }
+
+
 }
