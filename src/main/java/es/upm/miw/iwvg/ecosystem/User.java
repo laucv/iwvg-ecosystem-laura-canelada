@@ -38,4 +38,8 @@ public class User {
         return this.familyName;
     }
 
+    public String reverseName() {
+        return this.familyName + ", " + this.name;
+    }
+
 }
