@@ -59,4 +59,9 @@ class PointTest {
         assertFalse(point.isEquals(new Point(5,8)));
         assertFalse(point.isEquals(new Point(2,8)));
     }
+
+    @Test
+    void testDistance() {
+        assertEquals(1.4142, point.distance(new Point(3, 2)), 10e-5);
+    }
 }
