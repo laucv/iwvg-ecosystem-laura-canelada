@@ -11,3 +11,5 @@ notifications:
 script:
   #Test unitario y de integracion con cobertura (jacoco)
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
+  #SONARCLOUD
+  - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=lau-cv -Dsonar.login=$SONAR -Dsonar.projectKey=laucv_iwvg-ecosystem-laura-canelada
