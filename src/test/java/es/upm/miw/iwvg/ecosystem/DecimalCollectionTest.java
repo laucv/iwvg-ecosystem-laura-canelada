@@ -3,6 +3,7 @@ package es.upm.miw.iwvg.ecosystem;
 import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -58,5 +59,10 @@ class DecimalCollectionTest {
     @Test
     void testSmallerArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().smaller());
+    }
+
+    @Test
+    void testMedia() {
+        assertEquals(1.5, this.decimalCollection.media(), 10e-5);
     }
 }

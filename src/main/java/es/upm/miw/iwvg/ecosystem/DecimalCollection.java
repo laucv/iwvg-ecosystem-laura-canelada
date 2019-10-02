@@ -41,4 +41,10 @@ public class DecimalCollection {
         this.validateIsNullOrEmpty();
         return Collections.min(this.collection);
     }
+
+
+    public double media() {
+        this.validateIsNullOrEmpty();
+        return this.collection.stream().mapToDouble(Double::doubleValue).sum() / this.collection.size();
+    }
 }
