@@ -7,6 +7,7 @@
 >
 [![Build Status](https://travis-ci.org/laucv/iwvg-ecosystem-laura-canelada.svg?branch=develop)](https://travis-ci.org/laucv/iwvg-ecosystem-laura-canelada)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=laucv_iwvg-ecosystem-laura-canelada&metric=alert_status)](https://sonarcloud.io/dashboard?id=aucv_iwvg-ecosystem-laura-canelada)
+[![BCH compliance](https://bettercodehub.com/edge/badge/laucv/iwvg-ecosystem-laura-canelada?branch=develop)](https://bettercodehub.com/)
 
 ## Ecosistema
 * Java
