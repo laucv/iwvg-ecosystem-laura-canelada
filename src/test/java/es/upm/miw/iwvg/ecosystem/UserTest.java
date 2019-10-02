@@ -21,27 +21,38 @@ public class UserTest {
     }
 
     @Test
-    void testUserFullName(){
+    void testUserFullName() {
         assertEquals("Laura Canelada", user.fullName());
     }
 
     @Test
-    void testInitials(){
+    void testInitials() {
         assertEquals("L.", user.initials());
     }
 
     @Test
-    void testGetNumber(){
+    void testGetNumber() {
         assertEquals(2, user.getNumber());
     }
 
     @Test
-    void testGetName(){
+    void testGetName() {
         assertEquals("Laura", user.getName());
     }
 
     @Test
-    void testGetFullName(){
+    void testGetFullName() {
         assertEquals("Canelada", user.getFamilyName());
     }
+
+    @Test
+    void testReverseName() {
+        assertEquals("Canelada, Laura", user.reverseName());
+    }
+
+    @Test
+    void testfullNameUpperCase() {
+        assertEquals("LAURA CANELADA", user.fullNameUpperCase());
+    }
+
 }
