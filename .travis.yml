@@ -13,3 +13,12 @@ script:
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
   #SONARCLOUD
   - mvn sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=lau-cv -Dsonar.login=$SONAR -Dsonar.projectKey=laucv_iwvg-ecosystem-laura-canelada
+
+#Deploy
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU
+  on:
+    branch: master
+  app: iwvg-ecosystem-laura-canelada
