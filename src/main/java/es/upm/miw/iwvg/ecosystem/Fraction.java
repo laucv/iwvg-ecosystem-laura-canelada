@@ -27,4 +27,20 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isPropia() {
+        return this.numerator < this.denominator;
+    }
+
+    public double suma(Fraction fraction) {
+        double numeratorFractionDenominator = (double) this.numerator * (double) fraction.getDenominator();
+        double denominatorFractionNumerator = (double) this.denominator * (double) fraction.getNumerator();
+        return (numeratorFractionDenominator + denominatorFractionNumerator) / (double) (this.denominator * fraction.getDenominator());
+    }
+
+    public double resta(Fraction fraction) {
+        double numeratorFractionDenominator = (double) this.numerator * (double) fraction.getDenominator();
+        double denominatorFractionNumerator = (double) this.denominator * (double) fraction.getNumerator();
+        return (numeratorFractionDenominator - denominatorFractionNumerator) / (double) (this.denominator * fraction.getDenominator());
+    }
+
 }
