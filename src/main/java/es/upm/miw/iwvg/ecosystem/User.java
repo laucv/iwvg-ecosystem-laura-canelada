@@ -42,4 +42,8 @@ public class User {
         return this.familyName + ", " + this.name;
     }
 
+    public String fullNameUpperCase() {
+        return this.name.toUpperCase() + " " + this.familyName.toUpperCase();
+    }
+
 }
